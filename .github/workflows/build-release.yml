@@ -20,12 +20,13 @@ jobs:
 
     - name: Package Themes
       run: |
+        RELEASE_DIR=$(pwd)/release
         for dir in */; do
-          if [ -f "$dir/theme.manifest.json" ]; then
+          if [ -d "$dir" ] && [ "$dir" != "release/" ] && [ -f "$dir/theme.manifest.json" ]; then
             theme_name=$(basename "$dir")
             echo "Packaging theme: $theme_name"
             cd "$dir"
-            zip -r "../../release/$theme_name.zip" .
+            zip -r "$RELEASE_DIR/$theme_name.zip" .
             cd ..
           fi
         done
