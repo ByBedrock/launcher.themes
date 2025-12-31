@@ -1,0 +1,58 @@
+name: Build and Release Themes
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Prepare Release Directory
+      run: mkdir release
+
+    - name: Package Themes
+      run: |
+        for dir in */; do
+          if [ -f "$dir/theme.manifest.json" ]; then
+            theme_name=$(basename "$dir")
+            echo "Packaging theme: $theme_name"
+            cd "$dir"
+            zip -r "../../release/$theme_name.zip" .
+            cd ..
+          fi
+        done
+
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: themes
+        path: release/*.zip
+
+    - name: Delete Old Release
+      uses: dev-drprasad/delete-tag-and-release@v0.2.1
+      with:
+        delete_release: true
+        tag_name: latest
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Create Release
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: latest
+        name: Latest Themes
+        body: |
+          Auto-generated themes build from ${{ github.sha }}
+          Time: ${{ github.event.head_commit.timestamp }}
+        files: release/*.zip
+        prerelease: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

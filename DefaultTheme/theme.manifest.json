@@ -1,0 +1,36 @@
+{
+    "name": "DefaultTheme",
+    "version": "1.0.0",
+    "author": "BedrockLauncher",
+    "description": "Стандартная темная тема лаунчера с фиолетовыми акцентами",
+    "compatibility": "1.0.0",
+    "preview": "preview.png",
+    "resources": {
+        "styles": [],
+        "images": [],
+        "fonts": []
+    },
+    "variables": {
+        "primaryColor": "#6366F1",
+        "secondaryColor": "#8B5CF6",
+        "accentColor": "#10B981",
+        "backgroundColor": "#0F0F0F",
+        "surfaceColor": "#1A1A1A",
+        "cardColor": "#242424",
+        "textColor": "#FFFFFF",
+        "textSecondaryColor": "#A0A0A0",
+        "borderColor": "#333333",
+        "errorColor": "#EF4444",
+        "successColor": "#22C55E",
+        "warningColor": "#F59E0B",
+        "fontFamily": "Inter",
+        "borderRadius": 12,
+        "animationDuration": 0.3,
+        "emojiHome": "🏠",
+        "emojiProfiles": "👥",
+        "emojiVersions": "📦",
+        "emojiModules": "🧩",
+        "emojiThemes": "🎨",
+        "emojiSettings": "⚙️"
+    }
+}

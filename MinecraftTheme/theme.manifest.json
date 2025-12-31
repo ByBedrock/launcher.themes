@@ -1,0 +1,36 @@
+{
+    "name": "MinecraftTheme",
+    "version": "1.0.0",
+    "author": "BedrockLauncher",
+    "description": "Тема в стиле Minecraft с зелеными акцентами",
+    "compatibility": "1.0.0",
+    "preview": "preview.png",
+    "resources": {
+        "styles": [],
+        "images": [],
+        "fonts": []
+    },
+    "variables": {
+        "primaryColor": "#4CAF50",
+        "secondaryColor": "#8BC34A",
+        "accentColor": "#795548",
+        "backgroundColor": "#1B1B1B",
+        "surfaceColor": "#262626",
+        "cardColor": "#2D2D2D",
+        "textColor": "#E8E8E8",
+        "textSecondaryColor": "#888888",
+        "borderColor": "#3D3D3D",
+        "errorColor": "#D32F2F",
+        "successColor": "#388E3C",
+        "warningColor": "#FFA000",
+        "fontFamily": "Inter",
+        "borderRadius": 4,
+        "animationDuration": 0.15,
+        "emojiHome": "🏠",
+        "emojiProfiles": "👥",
+        "emojiVersions": "📦",
+        "emojiModules": "🧩",
+        "emojiThemes": "🎨",
+        "emojiSettings": "⚙️"
+    }
+}

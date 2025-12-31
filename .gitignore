@@ -1,0 +1,7 @@
+*.zip
+release/
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vs/

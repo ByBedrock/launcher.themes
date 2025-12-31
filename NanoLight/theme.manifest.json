@@ -1,0 +1,25 @@
+{
+    "name": "NanoLight",
+    "version": "1.0.0",
+    "author": "ByBedrock",
+    "description": "Generated Light Theme with custom assets",
+    "variables": {
+        "primaryColor": "#4F46E5",
+        "secondaryColor": "#7C3AED",
+        "accentColor": "#059669",
+        "backgroundColor": "#F9FAFB",
+        "surfaceColor": "#FFFFFF",
+        "cardColor": "#FFFFFF",
+        "textColor": "#111827",
+        "textSecondaryColor": "#6B7280",
+        "borderColor": "#E5E7EB",
+        "backgroundImage": "background.png",
+        "bannerImage": "banner.png",
+        "iconHome": "icon_home.png",
+        "iconProfiles": "icon_profiles.png",
+        "iconVersions": "icon_versions.png",
+        "iconSettings": "icon_settings.png",
+        "borderRadius": 12,
+        "animationDuration": 0.3
+    }
+}

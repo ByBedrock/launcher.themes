@@ -1,0 +1,25 @@
+{
+    "name": "NanoDark",
+    "version": "1.0.0",
+    "author": "ByBedrock",
+    "description": "Generated Dark Theme with custom assets",
+    "variables": {
+        "primaryColor": "#6366F1",
+        "secondaryColor": "#8B5CF6",
+        "accentColor": "#10B981",
+        "backgroundColor": "#0F0F0F",
+        "surfaceColor": "#1A1A1A",
+        "cardColor": "#242424",
+        "textColor": "#FFFFFF",
+        "textSecondaryColor": "#A0A0A0",
+        "borderColor": "#333333",
+        "backgroundImage": "background.png",
+        "bannerImage": "banner.png",
+        "iconHome": "icon_home.png",
+        "iconProfiles": "icon_profiles.png",
+        "iconVersions": "icon_versions.png",
+        "iconSettings": "icon_settings.png",
+        "borderRadius": 12,
+        "animationDuration": 0.3
+    }
+}

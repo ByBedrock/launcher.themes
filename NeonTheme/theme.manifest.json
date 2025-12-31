@@ -1,0 +1,36 @@
+{
+    "name": "NeonTheme",
+    "version": "1.0.0",
+    "author": "BedrockLauncher",
+    "description": "Яркая неоновая тема с киберпанк эстетикой",
+    "compatibility": "1.0.0",
+    "preview": "preview.png",
+    "resources": {
+        "styles": [],
+        "images": [],
+        "fonts": []
+    },
+    "variables": {
+        "primaryColor": "#FF00FF",
+        "secondaryColor": "#00FFFF",
+        "accentColor": "#FFE500",
+        "backgroundColor": "#0A0014",
+        "surfaceColor": "#1A0028",
+        "cardColor": "#2A0042",
+        "textColor": "#FFFFFF",
+        "textSecondaryColor": "#B8A8C8",
+        "borderColor": "#FF00FF40",
+        "errorColor": "#FF3366",
+        "successColor": "#00FF88",
+        "warningColor": "#FFAA00",
+        "fontFamily": "Inter",
+        "borderRadius": 16,
+        "animationDuration": 0.2,
+        "emojiHome": "🏠",
+        "emojiProfiles": "👥",
+        "emojiVersions": "📦",
+        "emojiModules": "🧩",
+        "emojiThemes": "🎨",
+        "emojiSettings": "⚙️"
+    }
+}
