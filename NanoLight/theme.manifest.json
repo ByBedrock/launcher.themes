@@ -1,7 +1,7 @@
 {
     "name": "NanoLight",
     "version": "1.0.0",
-    "author": "ByBedrock",
+    "author": "ByBedrock Team",
     "description": "Generated Light Theme with custom assets",
     "variables": {
         "primaryColor": "#4F46E5",
