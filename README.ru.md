@@ -1,10 +1,10 @@
-# 🎨 ByBedrock Themes v2.0
+# 🎨 ByBedrock Themes
 
 <div align="center">
 
 **Коллекция тем для кастомизации ByBedrock Launcher**
 
-[![Version](https://img.shields.io/badge/version-2.0.0-blue?style=flat-square)](https://github.com/ByBedrock/ThemesSource)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue?style=flat-square)](https://github.com/ByBedrock/ThemesSource)
 [![Themes](https://img.shields.io/badge/themes-5-blueviolet?style=flat-square)](https://github.com/ByBedrock/ThemesSource/releases)
 [![Format](https://img.shields.io/badge/format-JSON-yellow?style=flat-square)](https://www.json.org/)
 
@@ -14,7 +14,7 @@
 
 ---
 
-## 🆕 Что нового в v2.0
+## 🆕 Что нового в
 
 - **Glass-эффекты** — полупрозрачные элементы с размытием
 - **Glow-эффекты** — свечение для акцентных элементов
@@ -74,10 +74,10 @@ MyTheme/
 ```json
 {
     "name": "MyAwesomeTheme",
-    "version": "2.0.0",
+    "version": "1.0.0",
     "author": "Your Name",
     "description": "Моя крутая тема с glass-эффектами",
-    "compatibility": "2.0.0",
+    "compatibility": "1.0.0",
     "preview": "preview.png",
     "variables": {
         "primaryColor": "#818CF8",
@@ -149,7 +149,7 @@ MyTheme/
 | `successColor` | Успешные операции | `#4ADE80` |
 | `warningColor` | Предупреждения | `#FBBF24` |
 
-### Glass и Glow эффекты (v2.0)
+### Glass и Glow эффекты
 
 | Переменная | Описание | Пример |
 |------------|----------|--------|
@@ -185,7 +185,7 @@ cd MyTheme
     "version": "1.0.0",
     "author": "Your Name",
     "description": "Моя первая тема",
-    "compatibility": "2.0.0",
+    "compatibility": "1.0.0",
     "variables": {
         "primaryColor": "#FF6B6B",
         "secondaryColor": "#4ECDC4",
@@ -330,20 +330,6 @@ cd MyTheme
 3. Добавьте `theme.manifest.json`
 4. Добавьте `preview.png`
 5. Создайте Pull Request
-
----
-
-## 🔧 Миграция с v1.0
-
-Если у вас есть тема старого формата:
-
-1. Удалите `colors.json` — он больше не используется
-2. Удалите секцию `resources` (пустые массивы)
-3. Добавьте новые переменные:
-   - `glassColor`
-   - `glassBorderColor`  
-   - `glowColor`
-4. Обновите `version` и `compatibility` на `2.0.0`
 
 ---
 
