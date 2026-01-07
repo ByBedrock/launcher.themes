@@ -1,10 +1,10 @@
-# 🎨 ByBedrock Themes v2.0
+# 🎨 ByBedrock Themes
 
 <div align="center">
 
 **Theme collection for ByBedrock Launcher customization**
 
-[![Version](https://img.shields.io/badge/version-2.0.0-blue?style=flat-square)](https://github.com/ByBedrock/ThemesSource)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue?style=flat-square)](https://github.com/ByBedrock/ThemesSource)
 [![Themes](https://img.shields.io/badge/themes-5-blueviolet?style=flat-square)](https://github.com/ByBedrock/ThemesSource/releases)
 [![Format](https://img.shields.io/badge/format-JSON-yellow?style=flat-square)](https://www.json.org/)
 
@@ -14,7 +14,7 @@
 
 ---
 
-## 🆕 What's New in v2.0
+## 🆕 What's New
 
 - **Glass effects** — semi-transparent elements with blur
 - **Glow effects** — accent element illumination
@@ -149,7 +149,7 @@ MyTheme/
 | `successColor` | Successful operations | `#4ADE80` |
 | `warningColor` | Warnings | `#FBBF24` |
 
-### Glass and Glow Effects (v2.0)
+### Glass and Glow Effects
 
 | Variable | Description | Example |
 |----------|-------------|---------|
@@ -185,7 +185,7 @@ cd MyTheme
     "version": "1.0.0",
     "author": "Your Name",
     "description": "My first theme",
-    "compatibility": "2.0.0",
+    "compatibility": "1.0.0",
     "variables": {
         "primaryColor": "#FF6B6B",
         "secondaryColor": "#4ECDC4",
@@ -330,20 +330,6 @@ Create `preview.png` at 400x300 pixels with a screenshot of your theme.
 3. Add `theme.manifest.json`
 4. Add `preview.png`
 5. Create Pull Request
-
----
-
-## 🔧 Migrating from v1.0
-
-If you have an old format theme:
-
-1. Remove `colors.json` — no longer used
-2. Remove empty `resources` section
-3. Add new variables:
-   - `glassColor`
-   - `glassBorderColor`
-   - `glowColor`
-4. Update `version` and `compatibility` to `2.0.0`
 
 ---
 
