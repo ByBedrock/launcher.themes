@@ -74,10 +74,10 @@ MyTheme/
 ```json
 {
     "name": "MyAwesomeTheme",
-    "version": "2.0.0",
+    "version": "1.0.0",
     "author": "Your Name",
     "description": "My awesome theme with glass effects",
-    "compatibility": "2.0.0",
+    "compatibility": "1.0.0",
     "preview": "preview.png",
     "variables": {
         "primaryColor": "#818CF8",
