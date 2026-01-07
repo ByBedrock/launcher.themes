@@ -337,6 +337,6 @@ cd MyTheme
 
 **Создано с 🎨 командой ByBedrock**
 
-[🚀 Launcher](https://github.com/ByBedrock/Launcher) • [🧩 Modules](https://github.com/ByBedrock/ModulesSource) • [🎨 Themes](https://github.com/ByBedrock/ThemesSource)
+[🚀 Launcher](https://t.me/bybedrock_launcher) • [🎨 Themes](https://github.com/ByBedrock/ThemesSource)
 
 </div>
