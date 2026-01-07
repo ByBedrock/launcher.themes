@@ -1,9 +1,9 @@
 {
     "name": "NeonTheme",
-    "version": "2.0.0",
+    "version": "1.0.0",
     "author": "ByBedrock Team",
     "description": "Яркая неоновая тема с киберпанк эстетикой и glow-эффектами",
-    "compatibility": "2.0.0",
+    "compatibility": "1.0.0",
     "preview": "preview.png",
     "variables": {
         "primaryColor": "#FF00FF",
@@ -27,7 +27,7 @@
         "emojiHome": "🏠",
         "emojiProfiles": "👥",
         "emojiVersions": "📦",
-        "emojiModules": "🧩",
+        "emojiServers": "🌐",
         "emojiThemes": "🎨",
         "emojiSettings": "⚙️"
     }

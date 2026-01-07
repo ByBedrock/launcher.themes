@@ -1,9 +1,9 @@
 {
     "name": "MinecraftTheme",
-    "version": "2.0.0",
+    "version": "1.0.0",
     "author": "ByBedrock Team",
     "description": "Тема в стиле Minecraft с зелеными акцентами и пиксельной эстетикой",
-    "compatibility": "2.0.0",
+    "compatibility": "1.0.0",
     "preview": "preview.png",
     "variables": {
         "primaryColor": "#5D8C3E",
@@ -27,7 +27,7 @@
         "emojiHome": "🏠",
         "emojiProfiles": "👥",
         "emojiVersions": "📦",
-        "emojiModules": "🧩",
+        "emojiServers": "🌐",
         "emojiThemes": "🎨",
         "emojiSettings": "⚙️"
     }
