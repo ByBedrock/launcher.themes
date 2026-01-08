@@ -125,7 +125,7 @@ MyTheme/
 | `successColor` | Успешные операции | `#4ADE80` |
 | `warningColor` | Предупреждения | `#FBBF24` |
 
-### Glass и Glow эффекты (v2.0)
+### Glass и Glow эффекты
 
 | Переменная | Описание | Пример |
 |------------|----------|--------|
@@ -321,6 +321,6 @@ cd MyTheme
 
 **Создано с 🎨 командой ByBedrock**
 
-[🚀 Launcher](https://github.com/ByBedrock/Launcher) • [🧩 Modules](https://github.com/ByBedrock/ModulesSource) • [🎨 Themes](https://github.com/ByBedrock/ThemesSource)
+[🚀 Launcher](https://t.me/bybedrock_launcher) • [🎨 Themes](https://github.com/ByBedrock/ThemesSource)
 
 </div>

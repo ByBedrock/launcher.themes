@@ -125,7 +125,7 @@ MyTheme/
 | `successColor` | Successful operations | `#4ADE80` |
 | `warningColor` | Warnings | `#FBBF24` |
 
-### Glass and Glow Effects (v2.0)
+### Glass and Glow Effects
 
 | Variable | Description | Example |
 |----------|-------------|---------|
@@ -321,6 +321,6 @@ Create `preview.png` at 400x300 pixels with a screenshot of your theme.
 
 **Made with 🎨 by ByBedrock Team**
 
-[🚀 Launcher](https://github.com/ByBedrock/Launcher) • [🧩 Modules](https://github.com/ByBedrock/ModulesSource) • [🎨 Themes](https://github.com/ByBedrock/ThemesSource)
+[🚀 Launcher](https://t.me/bybedrock_launcher) • [🎨 Themes](https://github.com/ByBedrock/ThemesSource)
 
 </div>
