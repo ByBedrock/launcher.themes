@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "author": "ByBedrock Team",
     "description": "Яркая неоновая тема с киберпанк эстетикой и glow-эффектами",
-    "compatibility": "1.0.0",
+    "compatibility": "1.1.0",
     "preview": "preview.png",
     "variables": {
         "primaryColor": "#FF00FF",

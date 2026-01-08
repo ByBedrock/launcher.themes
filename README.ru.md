@@ -1,10 +1,10 @@
-# 🎨 ByBedrock Themes v2.0
+# 🎨 ByBedrock Themes v1.1
 
 <div align="center">
 
 **Коллекция тем для кастомизации ByBedrock Launcher**
 
-[![Version](https://img.shields.io/badge/version-2.0.0-blue?style=flat-square)](https://github.com/ByBedrock/ThemesSource)
+[![Version](https://img.shields.io/badge/version-1.1.0-blue?style=flat-square)](https://github.com/ByBedrock/ThemesSource)
 [![Themes](https://img.shields.io/badge/themes-5-blueviolet?style=flat-square)](https://github.com/ByBedrock/ThemesSource/releases)
 [![Format](https://img.shields.io/badge/format-JSON-yellow?style=flat-square)](https://www.json.org/)
 
@@ -14,13 +14,11 @@
 
 ---
 
-## 🆕 Что нового в v2.0
-
-- **Glass-эффекты** — полупрозрачные элементы с размытием
-- **Glow-эффекты** — свечение для акцентных элементов
-- **Gradient-кнопки** — градиентные заливки
-- **Micro-анимации** — плавные hover/click переходы
-- **Обновлённая палитра** — современные цвета
+- **Glass/Glow эффекты** — современная визуальная эстетика
+- **Dynamic XAML Injection** — файл `styles.axaml` для глубокой кастомизации
+- **Assets Folder** — автоматическая регистрация всех файлов из папки `Assets/`
+- **Hot-Reload** — мгновенное обновление интерфейса при сохранении файлов
+- **Расширяемые переменные** — поддержка любых пользовательских полей в JSON
 
 ---
 
@@ -38,17 +36,17 @@
 
 ## 📁 Структура темы
 
-```
 MyTheme/
-├── theme.manifest.json    # Единственный обязательный файл
-├── preview.png            # Превью темы (рекомендуется)
-├── background.png         # Фоновое изображение (опционально)
-├── banner.png             # Баннер (опционально)
-├── icon_home.png          # Кастомная иконка (опционально)
-├── icon_profiles.png
-├── icon_versions.png
-└── icon_settings.png
+├── theme.manifest.json    # Обязательный манифест
+├── styles.axaml           # Инъекция стилей Avalonia (опционально)
+├── preview.png            # Превью темы
+└── Assets/                # Папка для любых ассетов (картинки, шрифты)
+    ├── background.png
+    └── custom_button.png
 ```
+
+> [!TIP]
+> Все файлы в `Assets/` регистрируются как `{DynamicResource ThemeAsset_filename_ext}`.
 
 ---
 
@@ -71,45 +69,23 @@ MyTheme/
 
 ### Полный манифест со всеми опциями
 
-```json
 {
     "name": "MyAwesomeTheme",
-    "version": "2.0.0",
+    "version": "1.1.0",
     "author": "Your Name",
-    "description": "Моя крутая тема с glass-эффектами",
-    "compatibility": "2.0.0",
+    "description": "Моя крутая тема с кастомными стилями",
+    "compatibility": "1.1.0",
     "preview": "preview.png",
+    "resources": {
+        "styles": ["extra_styles.axaml"]
+    },
     "variables": {
         "primaryColor": "#818CF8",
         "secondaryColor": "#A78BFA",
-        "accentColor": "#34D399",
-        "backgroundColor": "#0A0A0F",
-        "surfaceColor": "#12121A",
-        "cardColor": "#1A1A24",
-        "textColor": "#F8FAFC",
-        "textSecondaryColor": "#94A3B8",
-        "borderColor": "#2A2A3A",
-        "errorColor": "#F87171",
-        "successColor": "#4ADE80",
-        "warningColor": "#FBBF24",
-        "glassColor": "#15FFFFFF",
-        "glassBorderColor": "#25FFFFFF",
-        "glowColor": "#40818CF8",
-        "fontFamily": "Inter",
-        "borderRadius": 16,
-        "animationDuration": 0.2,
-        "backgroundImage": "background.png",
-        "bannerImage": "banner.png",
-        "iconHome": "icon_home.png",
-        "iconProfiles": "icon_profiles.png",
-        "iconVersions": "icon_versions.png",
-        "iconSettings": "icon_settings.png",
-        "emojiHome": "🏠",
-        "emojiProfiles": "👥",
-        "emojiVersions": "📦",
-        "emojiModules": "🧩",
-        "emojiThemes": "🎨",
-        "emojiSettings": "⚙️"
+        "opacity": 0.85,
+        "blurStrength": 12,
+        "headerHeight": 64,
+        "myCustomToken": "#FF00FF"
     }
 }
 ```
@@ -185,7 +161,7 @@ cd MyTheme
     "version": "1.0.0",
     "author": "Your Name",
     "description": "Моя первая тема",
-    "compatibility": "2.0.0",
+    "compatibility": "1.1.0",
     "variables": {
         "primaryColor": "#FF6B6B",
         "secondaryColor": "#4ECDC4",
@@ -335,15 +311,9 @@ cd MyTheme
 
 ## 🔧 Миграция с v1.0
 
-Если у вас есть тема старого формата:
-
-1. Удалите `colors.json` — он больше не используется
-2. Удалите секцию `resources` (пустые массивы)
-3. Добавьте новые переменные:
-   - `glassColor`
-   - `glassBorderColor`  
-   - `glowColor`
-4. Обновите `version` и `compatibility` на `2.0.0`
+1. Обновите `compatibility` на `1.1.0`
+2. По желанию перенесите картинки в папку `Assets/` (они будут доступны как `ThemeAsset_name_png`)
+3. Используйте `styles.axaml` для изменения UI компонентов
 
 ---
 

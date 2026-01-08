@@ -1,0 +1,21 @@
+{
+    "name": "DevTheme",
+    "version": "1.0.0",
+    "author": "ByBedrock Team",
+    "description": "Demonstration theme for Theme Engine 1.1",
+    "compatibility": "1.1.0",
+    "variables": {
+        "primaryColor": "#FF5722",
+        "secondaryColor": "#FF9800",
+        "backgroundColor": "#121212",
+        "opacity": 0.8,
+        "blurStrength": 10,
+        "myCustomVariable": 42,
+        "customAccent": "#E91E63"
+    },
+    "resources": {
+        "styles": [
+            "styles.axaml"
+        ]
+    }
+}

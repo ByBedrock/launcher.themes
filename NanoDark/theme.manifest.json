@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "author": "ByBedrock Team",
     "description": "Ультра-темная тема с кастомными иконками и фоном",
-    "compatibility": "1.0.0",
+    "compatibility": "1.1.0",
     "preview": "preview.png",
     "variables": {
         "primaryColor": "#818CF8",
