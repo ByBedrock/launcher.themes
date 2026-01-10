@@ -10,11 +10,11 @@
         "secondaryColor": "#7CB342",
         "accentColor": "#8D6E63",
         "backgroundColor": "#313234",
-        "surfaceColor": "#C6C6C6",
+        "surfaceColor": "#0F1217",
         "cardColor": "#2D2D2D",
-        "textColor": "#4C4C4C",
+        "textColor": "#FFFFFF",
         "textSecondaryColor": "#9E9E9E",
-        "borderColor": "#404040",
+        "borderColor": "#5A5B5C",
         "errorColor": "#E53935",
         "successColor": "#43A047",
         "warningColor": "#FB8C00",
@@ -24,8 +24,6 @@
         "fontFamily": "Inter",
         "borderRadius": 4,
         "animationDuration": 0.15,
-        "backgroundImage": "background.png",
-        "bannerImage": "banner.png",
         "home": "icon_home.png",
         "profiles": "icon_profiles.png",
         "versions": "icon_versions.png",
@@ -37,8 +35,10 @@
         "iconDashboardServers": "fluent:Globe:Filled",
         "iconDashboardThemes": "fluent:PaintBrush:Filled",
         "iconFeatureVersionManagement": "fluent:Box:Filled",
-        "navbarColor": "#2D2D2D",
-        "navbarActiveColor": "#5D8C3E",
-        "navbarHoverColor": "#405D8C3E"
+        "backgroundImage": "background.png",
+        "bannerImage": "banner.png",
+        "navbarColor": "#48494A",
+        "navbarActivateColor": "#313233",
+        "navbarHoverColor": "#58585A"
     }
 }
