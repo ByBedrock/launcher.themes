@@ -1,6 +1,6 @@
 {
     "name": "MinecraftTheme",
-    "version": "1.1.0",
+    "version": "1.1.2",
     "author": "ByBedrock Team",
     "description": "Тема в стиле Minecraft с зелеными акцентами и пиксельной эстетикой",
     "compatibility": "1.1.0",
@@ -27,12 +27,12 @@
         "cardRadius": 0,
         "inputRadius": 0,
         "animationDuration": 0.1,
-        "home": "fluent:Home:Regular",
-        "profiles": "fluent:Person:Regular",
-        "versions": "fluent:Cube:Regular",
-        "servers": "fluent:Globe:Regular",
-        "themes": "fluent:Color:Regular",
-        "settings": "fluent:Settings:Regular",
+        "home": "icon_home.png",
+        "profiles": "icon_profiles.png",
+        "versions": "icon_versions.png",
+        "servers": "icon_servers.png",
+        "themes": "icon_themes.png",
+        "settings": "icon_settings.png",
         "iconGame": "fluent:Games:Filled",
         "iconDashboardVersions": "fluent:Cube:Filled",
         "iconDashboardServers": "fluent:Globe:Filled",
@@ -43,10 +43,5 @@
         "navbarColor": "#252525",
         "navbarActiveColor": "#3C8527",
         "navbarHoverColor": "#363636"
-    },
-    "resources": {
-        "styles": [
-            "styles.axaml"
-        ]
     }
 }
