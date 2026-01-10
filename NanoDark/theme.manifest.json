@@ -26,11 +26,16 @@
         "animationDuration": 0.25,
         "backgroundImage": "background.png",
         "bannerImage": "banner.png",
-        "home": "fluent:Home",
-        "profiles": "fluent:People",
-        "versions": "fluent:Box",
-        "servers": "fluent:Globe",
-        "themes": "fluent:Color",
-        "settings": "fluent:Settings"
+        "home": "fluent:Home:Filled",
+        "profiles": "fluent:People:Filled",
+        "versions": "fluent:Cube:Filled",
+        "servers": "fluent:Globe:Filled",
+        "themes": "fluent:PaintBrush:Filled",
+        "settings": "fluent:Settings:Filled",
+        "iconGame": "fluent:Games:Filled",
+        "iconDashboardVersions": "fluent:Cube:Filled",
+        "iconDashboardServers": "fluent:Globe:Filled",
+        "iconDashboardThemes": "fluent:PaintBrush:Filled",
+        "iconFeatureVersionManagement": "fluent:Box:Filled"
     }
 }
