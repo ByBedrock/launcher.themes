@@ -24,11 +24,11 @@
         "fontFamily": "Inter",
         "borderRadius": 4,
         "animationDuration": 0.15,
-        "emojiHome": "🏠",
-        "emojiProfiles": "👥",
-        "emojiVersions": "📦",
-        "emojiServers": "🌐",
-        "emojiThemes": "🎨",
-        "emojiSettings": "⚙️"
+        "home": "fluent:Home",
+        "profiles": "fluent:People",
+        "versions": "fluent:Box",
+        "servers": "fluent:Globe",
+        "themes": "fluent:Color",
+        "settings": "fluent:Settings"
     }
 }

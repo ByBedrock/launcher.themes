@@ -26,15 +26,11 @@
         "animationDuration": 0.2,
         "backgroundImage": "background.png",
         "bannerImage": "banner.png",
-        "iconHome": "icon_home.png",
-        "iconProfiles": "icon_profiles.png",
-        "iconVersions": "icon_versions.png",
-        "iconSettings": "icon_settings.png",
-        "emojiHome": "🏠",
-        "emojiProfiles": "👥",
-        "emojiVersions": "📦",
-        "emojiServers": "🌐",
-        "emojiThemes": "🎨",
-        "emojiSettings": "⚙️"
+        "home": "fluent:Home",
+        "profiles": "fluent:People",
+        "versions": "fluent:Box",
+        "servers": "fluent:Globe",
+        "themes": "fluent:Color",
+        "settings": "fluent:Settings"
     }
 }

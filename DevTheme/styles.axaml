@@ -1,8 +1,348 @@
+<!--
+    ╔═══════════════════════════════════════════════════════════════════════════╗
+    ║                    DevTheme - Полный пример кастомизации                  ║
+    ║                                                                           ║
+    ║  Этот файл демонстрирует ВСЕ возможности кастомизации через XAML.         ║
+    ║  Используйте его как справочник для создания своих тем!                   ║
+    ║                                                                           ║
+    ║  Документация: https://github.com/ByBedrock/ThemesSource                  ║
+    ╚═══════════════════════════════════════════════════════════════════════════╝
+-->
+
 <Styles xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <Style Selector="Button">
-        <Setter Property="Background" Value="{DynamicResource Theme_customAccentBrush}" />
-        <Setter Property="BorderThickness" Value="2" />
-        <Setter Property="BorderBrush" Value="White" />
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         СЕКЦИЯ 1: КНОПКИ (Buttons)
+         Доступные классы: .primary, .secondary, .ghost, .danger, .icon, .gradient
+         Состояния: :pointerover, :pressed, :disabled
+         ═══════════════════════════════════════════════════════════════════════ -->
+    
+    <!-- Основная кнопка с градиентом -->
+    <Style Selector="Button.primary">
+        <Setter Property="Background" Value="{DynamicResource ThemePrimaryBrush}"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="CornerRadius" Value="{DynamicResource ThemeButtonRadius}"/>
+        <Setter Property="Padding" Value="{DynamicResource ThemeButtonPadding}"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="FontSize" Value="{DynamicResource ThemeFontSize}"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="RenderTransform" Value="scale(1)"/>
+        <!-- Анимации переходов -->
+        <Setter Property="Transitions">
+            <Transitions>
+                <TransformOperationsTransition Property="RenderTransform" Duration="0:0:0.15"/>
+                <DoubleTransition Property="Opacity" Duration="0:0:0.15"/>
+                <BrushTransition Property="Background" Duration="0:0:0.15"/>
+            </Transitions>
+        </Setter>
     </Style>
+    
+    <!-- Эффект при наведении на primary кнопку -->
+    <Style Selector="Button.primary:pointerover">
+        <Setter Property="Background" Value="{DynamicResource ThemeSecondaryBrush}"/>
+        <Setter Property="RenderTransform" Value="scale(1.02)"/>
+        <Setter Property="Opacity" Value="0.95"/>
+    </Style>
+    
+    <!-- Эффект при нажатии на primary кнопку -->
+    <Style Selector="Button.primary:pressed">
+        <Setter Property="RenderTransform" Value="scale(0.98)"/>
+        <Setter Property="Opacity" Value="0.9"/>
+    </Style>
+    
+    <!-- Отключённая primary кнопка -->
+    <Style Selector="Button.primary:disabled">
+        <Setter Property="Opacity" Value="0.4"/>
+        <Setter Property="Cursor" Value="Arrow"/>
+    </Style>
+    
+    <!-- Вторичная кнопка с границей -->
+    <Style Selector="Button.secondary">
+        <Setter Property="Background" Value="{DynamicResource ThemeSurfaceBrush}"/>
+        <Setter Property="Foreground" Value="{DynamicResource ThemeTextBrush}"/>
+        <Setter Property="CornerRadius" Value="{DynamicResource ThemeButtonRadius}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource ThemeBorderBrush}"/>
+        <Setter Property="Padding" Value="16,10"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Transitions">
+            <Transitions>
+                <BrushTransition Property="Background" Duration="0:0:0.15"/>
+                <BrushTransition Property="BorderBrush" Duration="0:0:0.15"/>
+            </Transitions>
+        </Setter>
+    </Style>
+    
+    <Style Selector="Button.secondary:pointerover">
+        <Setter Property="Background" Value="{DynamicResource ThemeCardBrush}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource ThemePrimaryBrush}"/>
+    </Style>
+    
+    <!-- Прозрачная (ghost) кнопка -->
+    <Style Selector="Button.ghost">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Foreground" Value="{DynamicResource ThemeTextSecondaryBrush}"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Cursor" Value="Hand"/>
+    </Style>
+    
+    <Style Selector="Button.ghost:pointerover">
+        <Setter Property="Background" Value="{DynamicResource ThemeGlassBrush}"/>
+        <Setter Property="Foreground" Value="{DynamicResource ThemeTextBrush}"/>
+    </Style>
+    
+    <!-- Кнопка опасного действия (удалить и т.д.) -->
+    <Style Selector="Button.danger">
+        <Setter Property="Background" Value="{DynamicResource ThemeErrorBrush}"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="CornerRadius" Value="{DynamicResource ThemeButtonRadius}"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Cursor" Value="Hand"/>
+    </Style>
+    
+    <Style Selector="Button.danger:pointerover">
+        <Setter Property="Opacity" Value="0.85"/>
+        <Setter Property="RenderTransform" Value="scale(1.02)"/>
+    </Style>
+    
+    <!-- Иконка-кнопка -->
+    <Style Selector="Button.icon">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Foreground" Value="{DynamicResource ThemeTextSecondaryBrush}"/>
+        <Setter Property="Padding" Value="10"/>
+        <Setter Property="MinWidth" Value="36"/>
+        <Setter Property="MinHeight" Value="36"/>
+        <Setter Property="CornerRadius" Value="10"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="RenderTransform" Value="scale(1)"/>
+        <Setter Property="Transitions">
+            <Transitions>
+                <TransformOperationsTransition Property="RenderTransform" Duration="0:0:0.15"/>
+                <BrushTransition Property="Foreground" Duration="0:0:0.15"/>
+            </Transitions>
+        </Setter>
+    </Style>
+    
+    <Style Selector="Button.icon:pointerover">
+        <Setter Property="Background" Value="{DynamicResource ThemeGlassBrush}"/>
+        <Setter Property="Foreground" Value="{DynamicResource ThemePrimaryBrush}"/>
+        <Setter Property="RenderTransform" Value="scale(1.1)"/>
+    </Style>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         СЕКЦИЯ 2: НАВИГАЦИЯ (Navigation)
+         Кнопки бокового меню
+         ═══════════════════════════════════════════════════════════════════════ -->
+    
+    <Style Selector="Button.navbutton">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Foreground" Value="{DynamicResource ThemeTextSecondaryBrush}"/>
+        <Setter Property="Padding" Value="14,12"/>
+        <Setter Property="CornerRadius" Value="12"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontWeight" Value="Medium"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Transitions">
+            <Transitions>
+                <BrushTransition Property="Background" Duration="0:0:0.2"/>
+                <BrushTransition Property="Foreground" Duration="0:0:0.2"/>
+            </Transitions>
+        </Setter>
+    </Style>
+    
+    <Style Selector="Button.navbutton:pointerover">
+        <Setter Property="Background" Value="{DynamicResource ThemeGlassBrush}"/>
+        <Setter Property="Foreground" Value="{DynamicResource ThemeTextBrush}"/>
+    </Style>
+    
+    <!-- Активная кнопка навигации (выбранная страница) -->
+    <Style Selector="Button.navbutton.selected">
+        <Setter Property="Background" Value="{DynamicResource ThemePrimaryBrush}"/>
+        <Setter Property="Foreground" Value="White"/>
+    </Style>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         СЕКЦИЯ 3: КАРТОЧКИ (Cards)
+         Контейнеры для контента
+         ═══════════════════════════════════════════════════════════════════════ -->
+    
+    <!-- Стандартная карточка -->
+    <Style Selector="Border.card">
+        <Setter Property="Background" Value="{DynamicResource ThemeCardBrush}"/>
+        <Setter Property="CornerRadius" Value="{DynamicResource ThemeCardRadius}"/>
+        <Setter Property="Padding" Value="{DynamicResource ThemeCardPadding}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource ThemeBorderBrush}"/>
+        <Setter Property="RenderTransform" Value="translateY(0)"/>
+        <Setter Property="Transitions">
+            <Transitions>
+                <TransformOperationsTransition Property="RenderTransform" Duration="0:0:0.2"/>
+                <BoxShadowsTransition Property="BoxShadow" Duration="0:0:0.2"/>
+                <BrushTransition Property="BorderBrush" Duration="0:0:0.2"/>
+            </Transitions>
+        </Setter>
+    </Style>
+    
+    <!-- Эффект при наведении на карточку -->
+    <Style Selector="Border.card:pointerover">
+        <Setter Property="RenderTransform" Value="translateY(-2px)"/>
+        <Setter Property="BoxShadow" Value="0 8 24 0 #20000000"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource ThemePrimaryBrush}"/>
+    </Style>
+    
+    <!-- Стеклянная карточка с размытием -->
+    <Style Selector="Border.glass">
+        <Setter Property="Background" Value="{DynamicResource ThemeGlassBrush}"/>
+        <Setter Property="CornerRadius" Value="16"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource ThemeGlassBorderBrush}"/>
+    </Style>
+    
+    <!-- Hero-секция (большой баннер) -->
+    <Style Selector="Border.hero">
+        <Setter Property="CornerRadius" Value="20"/>
+        <Setter Property="Padding" Value="32"/>
+        <Setter Property="BoxShadow" Value="0 8 32 0 #30818CF8"/>
+        <Setter Property="Background">
+            <!-- Кастомный градиент для hero секции -->
+            <LinearGradientBrush StartPoint="0%,0%" EndPoint="100%,100%">
+                <GradientStop Color="{DynamicResource ThemePrimaryColor}" Offset="0"/>
+                <GradientStop Color="{DynamicResource ThemeSecondaryColor}" Offset="1"/>
+            </LinearGradientBrush>
+        </Setter>
+    </Style>
+    
+    <!-- Карточка статистики -->
+    <Style Selector="Border.stat-card">
+        <Setter Property="Background" Value="{DynamicResource ThemeCardBrush}"/>
+        <Setter Property="CornerRadius" Value="16"/>
+        <Setter Property="Padding" Value="20"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource ThemeBorderBrush}"/>
+        <Setter Property="RenderTransform" Value="scale(1)"/>
+        <Setter Property="Transitions">
+            <Transitions>
+                <TransformOperationsTransition Property="RenderTransform" Duration="0:0:0.2"/>
+                <BoxShadowsTransition Property="BoxShadow" Duration="0:0:0.2"/>
+            </Transitions>
+        </Setter>
+    </Style>
+    
+    <Style Selector="Border.stat-card:pointerover">
+        <Setter Property="RenderTransform" Value="scale(1.02)"/>
+        <Setter Property="BoxShadow" Value="0 8 24 0 #15000000"/>
+    </Style>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         СЕКЦИЯ 4: ПОЛЯ ВВОДА (Inputs)
+         TextBox, ComboBox, CheckBox, Slider
+         ═══════════════════════════════════════════════════════════════════════ -->
+    
+    <!-- Стилизованное поле ввода -->
+    <Style Selector="TextBox.themed">
+        <Setter Property="Background" Value="{DynamicResource ThemeSurfaceBrush}"/>
+        <Setter Property="Foreground" Value="{DynamicResource ThemeTextBrush}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource ThemeBorderBrush}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="CornerRadius" Value="{DynamicResource ThemeInputRadius}"/>
+        <Setter Property="Padding" Value="{DynamicResource ThemeInputPadding}"/>
+        <Setter Property="FontSize" Value="{DynamicResource ThemeFontSize}"/>
+        <Setter Property="Transitions">
+            <Transitions>
+                <BrushTransition Property="BorderBrush" Duration="0:0:0.15"/>
+            </Transitions>
+        </Setter>
+    </Style>
+    
+    <!-- Поле ввода в фокусе -->
+    <Style Selector="TextBox.themed:focus">
+        <Setter Property="BorderBrush" Value="{DynamicResource ThemePrimaryBrush}"/>
+    </Style>
+    
+    <!-- Выпадающий список -->
+    <Style Selector="ComboBox">
+        <Setter Property="Background" Value="{DynamicResource ThemeSurfaceBrush}"/>
+        <Setter Property="Foreground" Value="{DynamicResource ThemeTextBrush}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource ThemeBorderBrush}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="CornerRadius" Value="10"/>
+        <Setter Property="Padding" Value="14,10"/>
+    </Style>
+    
+    <!-- Чекбокс -->
+    <Style Selector="CheckBox">
+        <Setter Property="Foreground" Value="{DynamicResource ThemeTextBrush}"/>
+        <Setter Property="FontSize" Value="{DynamicResource ThemeFontSize}"/>
+    </Style>
+    
+    <!-- Слайдер -->
+    <Style Selector="Slider">
+        <Setter Property="Foreground" Value="{DynamicResource ThemePrimaryBrush}"/>
+    </Style>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         СЕКЦИЯ 5: ПРОГРЕСС-БАР (Progress)
+         ═══════════════════════════════════════════════════════════════════════ -->
+    
+    <Style Selector="ProgressBar">
+        <Setter Property="Height" Value="6"/>
+        <Setter Property="CornerRadius" Value="3"/>
+        <Setter Property="Background" Value="{DynamicResource ThemeSurfaceBrush}"/>
+        <!-- Градиентный прогресс -->
+        <Setter Property="Foreground">
+            <LinearGradientBrush StartPoint="0%,50%" EndPoint="100%,50%">
+                <GradientStop Color="{DynamicResource ThemePrimaryColor}" Offset="0"/>
+                <GradientStop Color="{DynamicResource ThemeSecondaryColor}" Offset="1"/>
+            </LinearGradientBrush>
+        </Setter>
+    </Style>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         СЕКЦИЯ 6: ПОДСКАЗКИ (Tooltips)
+         ═══════════════════════════════════════════════════════════════════════ -->
+    
+    <Style Selector="ToolTip">
+        <Setter Property="Background" Value="{DynamicResource ThemeCardBrush}"/>
+        <Setter Property="Foreground" Value="{DynamicResource ThemeTextBrush}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource ThemeBorderBrush}"/>
+        <Setter Property="CornerRadius" Value="10"/>
+        <Setter Property="Padding" Value="12,8"/>
+        <Setter Property="FontSize" Value="{DynamicResource ThemeFontSizeSmall}"/>
+    </Style>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         СЕКЦИЯ 7: СПИСКИ (Lists)
+         ═══════════════════════════════════════════════════════════════════════ -->
+    
+    <Style Selector="ListBox">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+    </Style>
+    
+    <Style Selector="ListBoxItem">
+        <Setter Property="Padding" Value="0"/>
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="Background" Value="Transparent"/>
+    </Style>
+    
+    <Style Selector="ListBoxItem:selected">
+        <Setter Property="Background" Value="Transparent"/>
+    </Style>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         СЕКЦИЯ 8: ГЛОБАЛЬНЫЕ СТИЛИ
+         Применяются ко всему окну
+         ═══════════════════════════════════════════════════════════════════════ -->
+    
+    <Style Selector="Window">
+        <Setter Property="FontFamily" Value="Segoe UI Variable Display, Inter, Segoe UI, sans-serif"/>
+        <Setter Property="FontSize" Value="{DynamicResource ThemeFontSize}"/>
+    </Style>
+
 </Styles>
