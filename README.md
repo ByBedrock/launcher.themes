@@ -267,7 +267,46 @@ Create `preview.png` at 400x300 pixels with a screenshot of your theme.
 
 ---
 
-## 🖼️ Image Requirements
+## 🖋️ Vector Icons (SVG Path)
+ 
+ You can use vector icons instead of PNG/Emoji for maximum quality.
+ Simply add specific fields with SVG Path Data to `variables`.
+ 
+ | Variable | Description |
+ |----------|-------------|
+ | `pathHome` | "Home" Icon |
+ | `pathVersions` | "Versions" Icon |
+ | `pathProfiles` | "Profiles" Icon |
+ | `pathServers` | "Servers" Icon |
+ | `pathThemes` | "Themes" Icon |
+ | `pathSettings` | "Settings" Icon |
+ 
+ **Example:**
+ ```json
+ "variables": {
+     "pathHome": "M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"
+ }
+ ```
+ 
+ ---
+ 
+ ## 🛠️ Custom Styles (XAML)
+ 
+ You can fully override the design of any component by loading your own `Styles`.
+ 
+ 1. Create a `styles.axaml` file in the theme folder.
+ 2. The launcher will load it automatically.
+ 3. If you need multiple files, list them in `resources.styles`:
+ 
+ ```json
+ "resources": {
+     "styles": ["Styles/Buttons.axaml", "Styles/Colors.axaml"]
+ }
+ ```
+ 
+ ---
+ 
+ ## 🖼️ Image Requirements
 
 | File | Size | Format | Description |
 |------|------|--------|-------------|
