@@ -24,11 +24,11 @@
         "fontFamily": "Inter",
         "borderRadius": 16,
         "animationDuration": 0.2,
-        "home": "fluent:Home",
-        "profiles": "fluent:People",
-        "versions": "fluent:Box",
-        "servers": "fluent:Globe",
-        "themes": "fluent:Color",
-        "settings": "fluent:Settings"
+        "home": "fluent:Home:Filled",
+        "profiles": "fluent:People:Filled",
+        "versions": "fluent:Cube:Filled",
+        "servers": "fluent:Globe:Filled",
+        "themes": "fluent:PaintBrush:Filled",
+        "settings": "fluent:Settings:Filled"
     }
 }
