@@ -36,6 +36,9 @@
         "iconDashboardVersions": "fluent:Cube:Filled",
         "iconDashboardServers": "fluent:Globe:Filled",
         "iconDashboardThemes": "fluent:PaintBrush:Filled",
-        "iconFeatureVersionManagement": "fluent:Box:Filled"
+        "iconFeatureVersionManagement": "fluent:Box:Filled",
+        "navbarColor": "#141418",
+        "navbarActiveColor": "#818CF8",
+        "navbarHoverColor": "#10FFFFFF"
     }
 }

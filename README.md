@@ -119,7 +119,10 @@ MyTheme/
         "versions": "fluent:Box",
         "servers": "fluent:Globe",
         "themes": "fluent:Color",
-        "settings": "fluent:Settings"
+        "settings": "fluent:Settings",
+        "navbarColor": "#1A1A24",
+        "navbarActiveColor": "#818CF8",
+        "navbarHoverColor": "#15FFFFFF"
     }
 }
 ```
@@ -715,7 +718,10 @@ Create a screenshot at **400×300 px** and save as `preview.png`.
     "textSecondaryColor": "#8B949E",
     "borderColor": "#30363D",
     "glassColor": "#10238636",
-    "glowColor": "#40238636"
+    "glowColor": "#40238636",
+    "navbarColor": "#21262D",
+    "navbarActiveColor": "#238636",
+    "navbarHoverColor": "#15238636"
 }
 ```
 
@@ -732,7 +738,10 @@ Create a screenshot at **400×300 px** and save as `preview.png`.
     "textSecondaryColor": "#9CA3AF",
     "borderColor": "#374151",
     "glassColor": "#150EA5E9",
-    "glowColor": "#400EA5E9"
+    "glowColor": "#400EA5E9",
+    "navbarColor": "#1F2937",
+    "navbarActiveColor": "#0EA5E9",
+    "navbarHoverColor": "#150EA5E9"
 }
 ```
 
@@ -749,7 +758,10 @@ Create a screenshot at **400×300 px** and save as `preview.png`.
     "textSecondaryColor": "#A1A1AA",
     "borderColor": "#52525B",
     "glassColor": "#15F43F5E",
-    "glowColor": "#40F43F5E"
+    "glowColor": "#40F43F5E",
+    "navbarColor": "#3F3F46",
+    "navbarActiveColor": "#F43F5E",
+    "navbarHoverColor": "#15F43F5E"
 }
 ```
 
@@ -766,7 +778,10 @@ Create a screenshot at **400×300 px** and save as `preview.png`.
     "textSecondaryColor": "#86EFAC",
     "borderColor": "#15803D",
     "glassColor": "#1522C55E",
-    "glowColor": "#4022C55E"
+    "glowColor": "#4022C55E",
+    "navbarColor": "#166534",
+    "navbarActiveColor": "#22C55E",
+    "navbarHoverColor": "#1522C55E"
 }
 ```
 
@@ -784,7 +799,10 @@ Create a screenshot at **400×300 px** and save as `preview.png`.
     "borderColor": "#E2E8F0",
     "glassColor": "#40FFFFFF",
     "glassBorderColor": "#20000000",
-    "glowColor": "#306366F1"
+    "glowColor": "#306366F1",
+    "navbarColor": "#FFFFFF",
+    "navbarActiveColor": "#6366F1",
+    "navbarHoverColor": "#106366F1"
 }
 ```
 
