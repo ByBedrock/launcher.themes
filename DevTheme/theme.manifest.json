@@ -21,8 +21,6 @@
         "inputRadius": 10
     },
     "resources": {
-        "styles": [
-            "styles.axaml"
-        ]
+        "styles": []
     }
 }
