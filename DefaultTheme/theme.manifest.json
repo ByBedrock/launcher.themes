@@ -2,7 +2,11 @@
     "name": "DefaultTheme",
     "version": "1.0.0",
     "author": "ByBedrock Team",
-    "description": "Стандартная темная тема с градиентными акцентами и glass-эффектами",
+    "localizedDescription": {
+        "ru": "Стандартная темная тема с градиентными акцентами и glass-эффектами",
+        "en": "Standard dark theme with gradient accents and glass effects",
+        "es": "Tema oscuro estándar con acentos degradados y efectos de cristal"
+    },
     "compatibility": "1.1.0",
     "preview": "preview.png",
     "variables": {

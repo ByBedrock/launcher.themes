@@ -2,7 +2,11 @@
     "name": "NeonTheme",
     "version": "1.0.0",
     "author": "ByBedrock Team",
-    "description": "Яркая неоновая тема с киберпанк эстетикой и glow-эффектами",
+    "localizedDescription": {
+        "ru": "Яркая неоновая тема с киберпанк эстетикой и glow-эффектами",
+        "en": "Bright neon theme with cyberpunk aesthetics and glow effects",
+        "es": "Tema neón brillante con estética cyberpunk y efectos de resplandor"
+    },
     "compatibility": "1.1.0",
     "preview": "preview.png",
     "variables": {

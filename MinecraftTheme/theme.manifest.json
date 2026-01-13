@@ -2,7 +2,11 @@
     "name": "MinecraftTheme",
     "version": "1.1.2",
     "author": "ByBedrock Team",
-    "description": "Тема в стиле Minecraft с зелеными акцентами и пиксельной эстетикой",
+    "localizedDescription": {
+        "ru": "Тема в стиле Minecraft с зелеными акцентами и пиксельной эстетикой",
+        "en": "Minecraft-style theme with green accents and pixel aesthetics",
+        "es": "Tema estilo Minecraft con acentos verdes y estética de píxeles"
+    },
     "compatibility": "1.1.0",
     "preview": "preview.png",
     "variables": {

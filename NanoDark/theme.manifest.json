@@ -2,7 +2,11 @@
     "name": "NanoDark",
     "version": "1.0.0",
     "author": "ByBedrock Team",
-    "description": "Ультра-темная тема с кастомными иконками и фоном",
+    "localizedDescription": {
+        "ru": "Ультра-темная тема с кастомными иконками и фоном",
+        "en": "Ultra-dark theme with custom icons and background",
+        "es": "Tema ultra oscuro con iconos y fondo personalizados"
+    },
     "compatibility": "1.1.0",
     "preview": "preview.png",
     "variables": {

@@ -2,7 +2,11 @@
     "name": "NanoLight",
     "version": "1.0.0",
     "author": "ByBedrock Team",
-    "description": "Светлая тема для дневного использования с мягкими тенями",
+    "localizedDescription": {
+        "ru": "Светлая тема для дневного использования с мягкими тенями",
+        "en": "Light theme for daily use with soft shadows",
+        "es": "Tema claro para uso diario con sombras suaves"
+    },
     "compatibility": "1.1.0",
     "preview": "preview.png",
     "variables": {
